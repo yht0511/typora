@@ -304,6 +304,7 @@
       // showStdErr("command is empty");
       return;
     }
+    showStdout('Loading...')
     const option = modal.shellSelect.options[modal.shellSelect.selectedIndex];
     const shell = option.value;
     exec(cmd, shell, showStdout, showStdErr);
